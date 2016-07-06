@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp">
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/backbtn_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nav_black_back" />
+
+        <EditText
+            android:id="@+id/et_search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/biv_sousuo"
+            android:layout_toRightOf="@+id/btn_back"
+            android:background="@color/while_little"
+            android:hint="请输入关键词搜索"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/themeApp"
+            android:textColorHint="@color/themeApp" />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/biv_sousuo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/search" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.zhansy.ordermanage.base.widget.XListView
+            android:id="@+id/xlv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel_no_data"
+            android:visibility="gone"
+            android:gravity="center">
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/msb"
+                android:id="@+id/msb_img"
+                android:layout_centerHorizontal="true"
+                />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有搜索到相关信息"
+                android:textSize="@dimen/large_sp_18"
+                android:textColor="@color/order_list_detail_course_table_time"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/text_no"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="请重新输入产品名称进行搜索吧!"
+                android:textSize="@dimen/large_sp_18"
+                android:textColor="@color/order_list_detail_course_table_time"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/text_no"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xx_large_sp_22" />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/backbtn_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nav_black_back" />
+    </RelativeLayout>
+
+    <com.zhansy.ordermanage.base.widget.PagerSlidingTabStrip
+        android:id="@+id/tabs_order_page"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:pstsDividerColor="@color/order_list_detail_course_table_time"
+        app:pstsIndicatorColor="#d89e45"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsTabPaddingLeftRight="10dp"
+        app:pstsShouldExpand="true" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_order_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

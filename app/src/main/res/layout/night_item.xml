@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/home_item_selector"
+    >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:id="@+id/iv_product_item"
+        android:src="@drawable/ic_empty"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_product_item"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_sp_14"
+        android:layout_marginTop="10dp"
+        android:text="文具作业本"
+        android:id="@+id/tv_product_item"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

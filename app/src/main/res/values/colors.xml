@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--橙色主题-->
+    <color name="themeApp">#3496E1</color>
+    <!--<color name="themeApp">#E75634</color>-->
+    <color name="editBackground">#FF6501</color>
+    <!--<color name="themeAppPress">#FF3300</color>-->
+    <color name="themeAppPress">#058DE5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="commonBackGround">#F2f4f8</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_x">#F0F0F0</color>
+    <color name="black">#000000</color>
+    <color name="blue">#00923f</color>
+
+    <color name="title">#F6F6F6</color>
+    <color name="while_little">#EAEAEA</color>
+    <color name="order_list_detail_course_table_time">#999999</color>
+    <color name="back_color">#999999</color>
+    <color name="order_list_key_color">#666666</color>
+    <color name="order_list_value_color">#333333</color>
+    <color name="order_status_state">#47abef</color>
+    <!-- 灰色 -->
+    <color name="gray_border">#dddddd</color>
+
+    <!--默认tab颜色-->
+    <color name="tab_normal_text_color">#888888</color>
+    <color name="order_btn">#FF670D</color>
+
+    <color name="course_list_value_color">#333333</color>
+    <color name="course_list_key_color">#666666</color>
+    <color name="my_wallet_line_color">#aaaaaa</color>
+    <color name="course_list_back">#F2F2F2</color>
+
+    <!-- 滑动的线条的颜色 -->
+    <color name="bg_title">#FF9900</color>
+    <color name="view_back">#aaaaaa</color>
+    <color name="mouth_back">#7c7c7c</color>
+    <color name="translucence">#a4000000</color>
+    <color name="translucent">#00000000</color>
+
+    <color name="background_green">#33CC99</color>
+    <color name="button_unselected">#ff54acea</color>
+    <color name="button_selected">#ff419de4</color>
+    <color name="shape_line">#ffcccccc</color>
+
+    <color name="red">#900</color>
+    <color name="warming_red">#ff0019</color>
+    <color name="quit_default_red">#F35336</color>
+    <color name="quit_pressed_red">#C32136</color>
+</resources>

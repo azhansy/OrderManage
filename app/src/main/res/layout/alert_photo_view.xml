@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/editext_border"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="请选择图片的上传方式"
+            android:gravity="center"
+            android:textSize="@dimen/medium_sp_16"
+            android:textColor="@color/course_list_key_color"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_border"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="拍照上传"
+            android:gravity="center"
+            android:textSize="@dimen/x_large_sp_20"
+            android:textColor="#1199d7"
+            android:id="@+id/pictures_txt" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_border"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="相册选择"
+            android:gravity="center"
+            android:textSize="@dimen/x_large_sp_20"
+            android:textColor="#1199d7"
+            android:id="@+id/photo_txt" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cancel_txt"
+        android:text="取消"
+        android:textSize="@dimen/x_large_sp_20"
+        android:textColor="#1199d7"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/editext_border"
+        android:layout_marginBottom="10dp" />
+</LinearLayout>
+

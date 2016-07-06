@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="图文分析"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xx_large_sp_22" />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/backbtn_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nav_black_back" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rel_title"
+        android:id="@+id/rel_choose"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/spinner_chart_type"
+            android:entries="@array/chart_type"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textColor="@color/themeApp"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_choose"
+        android:id="@+id/pie_chart"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="查看用户建议"
+            android:textSize="@dimen/xx_large_sp_22"
+            />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/backbtn_width"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btn_back"
+            android:src="@drawable/nav_black_back"
+            />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_taste"
+            tools:listitem="@layout/item_taste"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include layout="@layout/base_empty_layout" />
+    </FrameLayout>
+</LinearLayout>

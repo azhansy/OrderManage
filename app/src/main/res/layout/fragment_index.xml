@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/commonBackGround"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp">
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/backbtn_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nav_black_back" />
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="快速下单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x_large_sp_20" />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/biv_sousuo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/search" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rl_search"
+        android:orientation="horizontal"
+        android:baselineAligned="true"
+        android:id="@+id/ll_menu"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_product_classify"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/product_list_type_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="商品分类"
+                android:textColor="@color/order_list_value_color"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/e_triangle"
+                android:id="@+id/mSubjectImg"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@null"
+                />
+        </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:background="@color/gray_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+        <RelativeLayout
+            android:id="@+id/rl_product_all"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/product_list_all_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="全部产品"
+                android:textColor="@color/bg_title"
+                android:textSize="@dimen/normal_sp_14" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.zhansy.ordermanage.base.widget.XListView
+        android:id="@+id/xlv_product"
+        android:layout_below="@+id/ll_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_menu"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/base_empty_layout"/>
+    </LinearLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/rel_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_menu"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/text_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="暂无数据"
+            android:textColor="@color/order_list_detail_course_table_time"
+            android:textSize="@dimen/large_sp_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_no"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/order_list_detail_course_table_time"
+            android:textSize="@dimen/large_sp_18" />
+    </RelativeLayout>-->
+
+   
+</RelativeLayout>

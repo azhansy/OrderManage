@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="ordermanage" />
+
+    <version value="37" />
+
+    <list>
+        <mapping class="com.zhansy.ordermanage.base.mvp.model.UserBean"/>
+        <mapping class="com.zhansy.ordermanage.base.mvp.model.OrderBean"/>
+        <mapping class="com.zhansy.ordermanage.base.mvp.model.ProductBean"/>
+        <mapping class="com.zhansy.ordermanage.base.mvp.model.AlertLowBean"/>
+        <mapping class="com.zhansy.ordermanage.base.mvp.model.FeedBackBean"/>
+        <mapping class="com.zhansy.ordermanage.base.mvp.model.CurrentUserBean"/>
+        <mapping class="com.zhansy.ordermanage.base.mvp.model.DownLoadBean"/>
+        <mapping class="com.zhansy.ordermanage.base.mvp.model.InformBean"/>
+    </list>
+</litepal>

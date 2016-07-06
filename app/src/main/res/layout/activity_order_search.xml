@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="订单查询"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xx_large_sp_22" />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/backbtn_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nav_black_back" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询条件:"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_order_type"
+            android:entries="@array/search_order"
+            android:textColor="@color/themeApp"
+            android:textSize="@dimen/medium_sp_16"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gray_border"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询内容:"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            />
+        <EditText
+            android:id="@+id/et_key"
+            android:layout_width="0dp"
+            android:hint="请输入关键词"
+            android:textColorHint="@color/themeApp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/themeApp"
+            android:textSize="@dimen/medium_sp_16"/>
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/biv_sousuo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/themeApp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rel_title"
+        android:layout_height="match_parent">
+
+    <com.zhansy.ordermanage.base.widget.XExpandableListView
+        android:id="@+id/xelv_order_classify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+        <include layout="@layout/base_empty_layout"/>
+    </FrameLayout>
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_title">
+
+        <RelativeLayout
+            android:id="@+id/rel_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="暂无数据"
+                android:textColor="@color/order_list_detail_course_table_time"
+                android:textSize="@dimen/large_sp_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_no"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/order_list_detail_course_table_time"
+                android:textSize="@dimen/large_sp_18" />
+        </RelativeLayout>
+    </RelativeLayout>-->
+</LinearLayout>

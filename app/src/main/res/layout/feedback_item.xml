@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/imgurl"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_empty"
+        android:contentDescription="@null"
+        android:scaleType="centerInside" />
+    <LinearLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/imgurl"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:text="匿名用户"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_sp_18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:text="商品描述: "
+                android:textColor="@color/order_list_key_color"
+                android:textSize="@dimen/medium_sp_16" />
+
+            <TextView
+                android:id="@+id/describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_describe"
+                android:text="XXX什么破玩意"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_sp_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/course_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="问题分类: "
+                android:textColor="@color/order_list_value_color"
+                android:textSize="@dimen/medium_sp_16" />
+
+            <TextView
+                android:id="@+id/product_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/course_txt"
+                android:text="质量问题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_sp_14" />
+           <!-- <TextView
+                android:id="@+id/course_txt1"
+                android:layout_toRightOf="@+id/product_issue"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量: "
+                android:textColor="@color/order_list_value_color"
+                android:textSize="@dimen/normal_sp" />
+
+            <TextView
+                android:id="@+id/product_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/course_txt1"
+                android:text="10"
+                android:textColor="@color/order_list_value_color"
+                android:textSize="@dimen/normal_sp" />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="关于"
+            android:textSize="@dimen/xx_large_sp_22"
+            />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/backbtn_width"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btn_back"
+            android:src="@drawable/nav_black_back"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/about_activity_bg"
+        android:layout_height="180dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:text="@string/about_introduce"
+        android:textSize="@dimen/x_large_sp_20"
+        android:layout_height="match_parent" />
+</LinearLayout>

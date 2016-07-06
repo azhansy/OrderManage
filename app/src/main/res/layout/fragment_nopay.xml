@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.zhansy.ordermanage.base.widget.XExpandableListView
+        android:id="@+id/xelv_nopay"
+        tools:listitem="@android:layout/simple_list_item_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel_no_data"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无数据"
+            android:textSize="@dimen/large_sp_18"
+            android:textColor="@color/order_list_detail_course_table_time"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text_no"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="@dimen/large_sp_18"
+            android:textColor="@color/order_list_detail_course_table_time"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text_no"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="login_title_height">50dp</dimen>
+    <dimen name="little_sp_12">12sp</dimen>
+    <dimen name="normal_sp_14">14sp</dimen>
+    <dimen name="medium_sp_16">16sp</dimen>
+    <dimen name="large_sp_18">18sp</dimen>
+    <dimen name="x_large_sp_20">20sp</dimen>
+    <dimen name="xx_large_sp_22">22sp</dimen>
+    <dimen name="xxx_large_sp_26">26sp</dimen>
+    <dimen name="xxxx_large_sp_28">28sp</dimen>
+
+    <dimen name="backbtn_width">48dp</dimen>
+    <dimen name="activity_checkbox_layout">20dp</dimen>
+
+
+    <dimen name="image_width_16">16dp</dimen>
+    <dimen name="image_width_25">25dp</dimen>
+    <dimen name="image_width_29">29dp</dimen>
+    <dimen name="image_width_36">36dp</dimen>
+    <dimen name="image_width_40">40dp</dimen>
+    <dimen name="image_width_47">47dp</dimen>
+    <dimen name="image_width_50">50dp</dimen>
+    <dimen name="image_width_52">52dp</dimen>
+
+    <dimen name="image_width_55">55dp</dimen>
+    <dimen name="image_width_58">58dp</dimen>
+    <dimen name="image_width_72">72dp</dimen>
+    <dimen name="image_width_76">76dp</dimen>
+    <dimen name="image_width_120">120dp</dimen>
+
+    <dimen name="image_radius_3">3dp</dimen>
+    <dimen name="image_radius_4">4dp</dimen>
+    <dimen name="image_radius_10">10dp</dimen>
+
+</resources>

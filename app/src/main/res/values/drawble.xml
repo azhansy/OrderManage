@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <drawable name="half_transparent">#44000000</drawable> -->
+    <drawable name="half_transparent">#29000000</drawable>
+    <drawable name="news_adapter_item_normal">#F0F0F0</drawable>
+</resources>

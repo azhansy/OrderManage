@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonBackGround"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="已完成订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xx_large_sp_22" />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/backbtn_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nav_black_back" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rel_title"
+        android:layout_above="@+id/btn_clear_data"
+        android:layout_height="match_parent">
+        <com.zhansy.ordermanage.base.widget.XExpandableListView
+            android:id="@+id/xelv_complete"
+            tools:listitem="@android:layout/simple_list_item_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/base_empty_layout" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/btn_clear_data"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="12.0dip"
+        android:background="@drawable/theme_button_selector"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:text="清空已完成订单"
+        android:textSize="@dimen/xx_large_sp_22" />
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel_no_data"
+        android:layout_below="@+id/rel_title"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无数据"
+            android:textSize="@dimen/large_sp_18"
+            android:textColor="@color/order_list_detail_course_table_time"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text_no"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="@dimen/large_sp_18"
+            android:textColor="@color/order_list_detail_course_table_time"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text_no"/>
+    </RelativeLayout>-->
+</RelativeLayout>

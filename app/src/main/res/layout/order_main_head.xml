@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <!--<CheckBox
+        android:id="@+id/cb_order_head"
+        android:layout_width="@dimen/activity_checkbox_layout"
+        android:layout_height="@dimen/activity_checkbox_layout"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:gravity="center_vertical" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toLeftOf="@+id/tv_order_detail"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号: "
+                android:textColor="#000000"
+                android:textSize="@dimen/large_sp_18" />
+
+            <TextView
+                android:id="@+id/tv_order_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="XXX"
+                android:textColor="#007AFF"
+                android:textSize="@dimen/large_sp_18" />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/text_blue_border"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="8dp"
+        android:text="查看详情"
+        android:textColor="@color/order_status_state"
+        android:textSize="@dimen/large_sp_18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_border"/>
+</RelativeLayout>

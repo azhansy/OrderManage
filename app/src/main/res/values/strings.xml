@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">订单系统</string>
+    <string name="action_settings">Settings</string>
+    <string name="parse_exception_message">Json解析错误</string>
+
+    <!-- XlistView start-->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">上拉加载更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在加载...</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载...</string>
+
+    <!--网络请求地址 -->
+    <!--主机地址-->
+    <string name="host">http://azhansy.wicp.net/OrderManage/</string>
+    <!--<string name="host">http://192.168.0.137:80/OrderManage/</string>-->
+    <!--<string name="host">http://172.27.10.20:85/OrderManage/</string>-->
+    <string name="api_login">index.php/Home/Index/doLogin</string>
+    <!--app下载路径-->
+    <string name="api_app_download">Public/app/order.app</string>
+    <!--出货单 API-->
+    <!--所有订单-->
+    <string name="api_order">index.php/Home/Order/toSearch</string>
+    <string name="api_product">index.php/Home/Product/toSearch</string>
+    <string name="api_product_10">index.php/Home/Product/getMorePopularProduct</string>
+    <string name="api_delete_order">index.php/Home/Order/orderDel</string>
+    <string name="api_update_order">index.php/Home/Order/orderUpdate2</string>
+    <string name="api_create_order">index.php/Home/Order/orderCreate</string>
+    <string name="api_upLoad_order">index.php/Home/PDFExport/toPrintPDF</string>
+    <string name="api_upLoad_order_excel">index.php/Home/Order/orderPrint</string>
+
+    <!--产品 类型-->
+    <string name="api_product_type">index.php/Home/ProductType/toSearch</string>
+    <string name="api_create_product">index.php/Home/Product/addProduct</string>
+    <string name="api_update_product">index.php/Home/Product/updateProduct2</string>
+    <string name="api_delete_product">index.php/Home/Product/delProduct</string>
+    <!--产品 反馈-->
+    <string name="api_product_feed_back_search">index.php/Home/Message/toSearch</string>
+    <string name="api_product_feed_back_create">index.php/Home/Message/createMsg</string>
+    <string name="api_product_feed_back_delete">index.php/Home/Message/deleteMsg</string>
+    <!--添加用户-->
+    <string name="api_user_register">index.php/Home/User/addUser</string>
+    <string name="api_user_update">index.php/Home/User/updateUser</string>
+    <string name="api_user_search">index.php/Home/User/toSearch</string>
+    <string name="api_user_delete">index.php/Home/User/deleteUser</string>
+    <string name="api_password_update">index.php/Home/User/updatePassword</string>
+    <!--厂家公告-->
+    <string name="api_inform_search">index.php/Home/Announcement/toSearch</string>
+    <string name="api_inform_create">index.php/Home/Announcement/addAnnouncement</string>
+    <string name="api_inform_delete">index.php/Home/Announcement/delAnnouncement</string>
+    <!--用户建议反馈-->
+    <string name="api_taste_search">index.php/Home/UserMsgReturn/toSearch</string>
+    <string name="api_taste_create">index.php/Home/UserMsgReturn/add</string>
+    <string name="api_taste_delete">index.php/Home/UserMsgReturn/delete</string>
+    <!--低库存报警-->
+    <string name="api_low_alert_search">index.php/Home/LowStockAlert/SendLowStock</string>
+    <!--图形分析-->
+    <string name="api_mp_chart">index.php/Home/Index/getMyOrderAllStatus</string>
+
+    <!--版本-->
+    <string name="api_version">api/version</string>
+
+    <string name="about_introduce">本客户端有两个app版本，一个是企业版，一个是用户版，主要对不同用户类型进行特定的权限控制。主要功能有：商品信息查询、商品的信息查询、订单录入、企业处理订单进程、订单进度查询、会员信息反馈和低库存报警提示等。</string>
+
+    <!--<string name="tv_all_order">全部</string>
+    <string name="tv_nopayment">待付款</string>
+    <string name="tv_nodelivery">待发货</string>
+    <string name="tv_noconfirm">待收货</string>
+    <string name="tv_noevaluate">待评价</string>
+    <string name="tv_complete">已完成</string>-->
+
+    <string name="tv_all_order">全部订单</string>
+    <string name="tv_nopayment">未审核</string>
+    <string name="tv_nodelivery">备货中</string>
+    <string name="tv_noconfirm">已发货</string>
+    <string name="tv_noevaluate">已确认</string>
+    <string name="tv_complete">已完成</string>
+
+    <string-array name="search_product">
+        <item>商品名称</item>
+        <item>商品编码</item>
+        <item>商品批次</item>
+        <item>登记人员</item>
+    </string-array>
+    <string-array name="search_order">
+        <item>订单编号</item>
+        <item>订单状态</item>
+        <item>登记人员</item>
+    </string-array>
+    <string-array name="search_order_admin">
+        <item>订单编号</item>
+        <item>订单状态</item>
+        <item>登记人员</item>
+        <item>下单客户</item>
+    </string-array>
+    <string-array name="search_feedback">
+        <item>商品名称</item>
+        <item>商品编号</item>
+        <item>订单号</item>
+        <item>用户名</item>
+    </string-array>
+    <string-array name="order_type_user">
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>已发货</item>
+        <item>待评价</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="order_type">
+        <item>未审核</item>
+        <item>备货中</item>
+        <item>已发货</item>
+        <item>已确认</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="product_issue">
+        <item>破损</item>
+        <item>过期</item>
+        <item>大小不一</item>
+        <item>潮湿</item>
+        <item>数量不够</item>
+        <item>质量差</item>
+        <item>规格不合</item>
+        <item>其他</item>
+    </string-array>
+   <!-- <string-array name="pay_mode">
+        <item>未支付</item>
+        <item>微信支付</item>
+        <item>支付宝支付</item>
+    </string-array>-->
+    <string-array name="chart_type">
+        <item>订单状态</item>
+        <item>热卖程度</item>
+        <item>商品类型</item>
+    </string-array>
+</resources>

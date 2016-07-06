@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/course_list_back">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_item"
+        android:paddingRight="10dp">
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="10dp"
+		    android:text="青年"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:id="@+id/cateName"
+		    android:textColor="@color/course_list_value_color"
+		    android:textSize="@dimen/normal_sp_14"/>
+		<!--<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/count"
+		    android:text="236"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:textColor="@color/course_list_value_color"
+		    android:textSize="@dimen/normal_sp"/>-->
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/top_line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="15dp"-->
+        <!--android:background="@color/title" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_user"-->
+        <!--android:layout_width="75dp"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:layout_alignBaseline="@+id/rel_right"-->
+        <!--android:layout_below="@+id/top_line"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:background="@drawable/user_icon"-->
+        <!--android:padding="5dp" />-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rel_right"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toRightOf="@+id/iv_user">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_company"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="厂家名称"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/x_large_sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_grade"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/tv_name"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="40dp"-->
+            <!--android:text="好评度高"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/normal_sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_context"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@id/tv_name"-->
+            <!--android:layout_below="@id/tv_grade"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:ellipsize="end"-->
+            <!--android:maxLines="2"-->
+            <!--android:scrollHorizontally="true"-->
+            <!--android:text="优质服务"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/normal_sp" />-->
+
+    <!--</RelativeLayout>-->
+</RelativeLayout>

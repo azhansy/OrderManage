@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="低库存报警"
+            android:textSize="@dimen/xx_large_sp_22"
+            />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/backbtn_width"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btn_back"
+            android:src="@drawable/nav_black_back"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_item_selector"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="低库存报警"
+            android:textSize="@dimen/fab_margin"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cb_stock_alerm"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/gray_border"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_notice"
+            tools:listitem="@layout/notice_item"
+            />
+
+        <include layout="@layout/base_empty_layout"/>
+    </FrameLayout>
+</LinearLayout>

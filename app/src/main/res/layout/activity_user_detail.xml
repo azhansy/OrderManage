@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_title_height"
+        android:background="@color/themeApp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用户详细信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xx_large_sp_22" />
+
+        <com.zhansy.ordermanage.base.widget.BaseImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/backbtn_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nav_black_back" />
+    </RelativeLayout>
+
+    <com.zhansy.ordermanage.base.widget.MyScrollowView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_manage"
+        android:layout_below="@+id/rel_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:id="@+id/ic_icon"
+                    android:src="@drawable/ic_empty"
+                    android:layout_height="60dp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_border" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/order_code_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="用户名       "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_sp_16" />
+
+                <EditText
+                    android:id="@+id/et_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:inputType="none"
+                    android:editable="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/order_code_txt"
+                    android:hint="请输入用户名"
+                    android:textColor="@color/themeApp"
+                    android:textColorHint="@color/order_list_detail_course_table_time"
+                    android:textSize="@dimen/medium_sp_16" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_border" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/order_address_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号码    "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_sp_16" />
+
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/order_address_txt"
+                    android:hint="请填写手机号码"
+                    android:editable="false"
+                    android:textColor="@color/themeApp"
+                    android:textColorHint="@color/order_list_detail_course_table_time"
+                    android:textSize="@dimen/medium_sp_16" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_border" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_border" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/userName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="所属公司    "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_sp_16" />
+
+                <EditText
+                    android:id="@+id/et_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/userName_txt"
+                    android:hint="所属公司"
+                    android:editable="false"
+                    android:textColor="@color/themeApp"
+                    android:textColorHint="@color/order_list_detail_course_table_time"
+                    android:textSize="@dimen/medium_sp_16" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_border" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/total_price_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="用户地址   "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_sp_16" />
+
+                <EditText
+                    android:id="@+id/et_user_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/total_price_txt"
+                    android:hint="请填写省、市、街道地址"
+                    android:editable="false"
+                    android:textColor="@color/themeApp"
+                    android:textColorHint="@color/order_list_detail_course_table_time"
+                    android:textSize="@dimen/medium_sp_16" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_postcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="邮政编码   "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_sp_16" />
+
+                <EditText
+                    android:id="@+id/et_postcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_postcode"
+                    android:hint="邮政编码"
+                    android:editable="false"
+                    android:textColor="@color/themeApp"
+                    android:textColorHint="@color/order_list_detail_course_table_time"
+                    android:textSize="@dimen/medium_sp_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.zhansy.ordermanage.base.widget.MyScrollowView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/ll_manage"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_delete_user"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_above="@+id/btn_manage"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/theme_button_selector"
+            android:singleLine="true"
+            android:text="删除该用户"
+            android:textSize="@dimen/xx_large_sp_22" />
+
+        <Button
+            android:id="@+id/btn_manage"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/theme_button_selector"
+            android:singleLine="true"
+            android:text="设置为管理员"
+            android:textSize="@dimen/xx_large_sp_22" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

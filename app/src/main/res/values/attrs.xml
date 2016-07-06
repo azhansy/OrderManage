@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="BaseImageView">
+        <attr name="enable_gray" format="boolean|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsIndicatorTitleSelectedColor" format="color" />
+        <attr name="pstsIndicatorTitleUnSelectedColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsUnderlineAlignText" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="image_width" format="enum">
+            <enum name="width_16" value="16" />
+            <enum name="width_25" value="25" />
+            <enum name="width_29" value="29" />
+            <enum name="width_36" value="36" />
+            <enum name="width_40" value="40" />
+            <enum name="width_47" value="47" />
+            <enum name="width_50" value="50" />
+            <enum name="width_52" value="52" />
+
+            <enum name="width_55" value="55" />
+            <enum name="width_58" value="58" />
+            <enum name="width_72" value="72" />
+            <enum name="width_76" value="76" />
+            <enum name="width_120" value="120" />
+
+        </attr>
+    </declare-styleable>
+
+    <attr name="rightPadding" format="dimension" />
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+</resources>

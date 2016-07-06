@@ -114,7 +114,8 @@ public class SpashActivity extends MVPBaseActivity<LoginPresenterImpl> implement
             }
         }
         ToastUtil.showToast(this,"登陆失败，请重新登录");
-        LoginActivity.launch(this,LoginActivity.class,"fail");
+        MainActivity.launch(this,MainActivity.class,"success");
+//        LoginActivity.launch(this,LoginActivity.class,"fail");
         finish();
     }
 
@@ -129,7 +130,8 @@ public class SpashActivity extends MVPBaseActivity<LoginPresenterImpl> implement
             }
         }
         ToastUtil.showToast(this,"网络异常，请重新登录!");
-        LoginActivity.launch(this,LoginActivity.class,"fail");
+//        LoginActivity.launch(this,LoginActivity.class,"fail");
+        MainActivity.launch(this,MainActivity.class,"success");
         finish();
     }
 
